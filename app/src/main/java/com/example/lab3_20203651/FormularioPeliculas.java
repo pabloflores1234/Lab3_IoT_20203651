@@ -50,8 +50,7 @@ public class FormularioPeliculas extends AppCompatActivity {
         checkbox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                // Si el checkbox está marcado, habilitar el botón de regreso
-                // Si no, deshabilitarlo
+
                 buttonRegresar.setEnabled(isChecked);
                 if (!isChecked) {
                     buttonRegresar.setClickable(false);
@@ -66,12 +65,10 @@ public class FormularioPeliculas extends AppCompatActivity {
         buttonRegresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Verificar si el checkbox está marcado antes de regresar
                 if (checkbox.isChecked()) {
                     Intent intent = new Intent(FormularioPeliculas.this, PagPrincipal.class);
                     startActivity(intent);
                 } else {
-                    // Si el checkbox no está marcado, mostrar un mensaje o realizar otra acción
                     Toast.makeText(FormularioPeliculas.this, "Confirma la información antes de regresar.", Toast.LENGTH_SHORT).show();
                 }
             }
