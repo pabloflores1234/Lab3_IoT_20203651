@@ -1,33 +1,65 @@
 package com.example.lab3_20203651.objetos;
 
+import com.google.gson.annotations.SerializedName;
+
+import java.io.Serializable;
 import java.util.List;
 
-public class peliculas {
+public class Peliculas implements Serializable {
+    @SerializedName("Title")
     private String title;
+    @SerializedName("Year")
     private String year;
+    @SerializedName("Rated")
     private String rated;
+    @SerializedName("Released")
     private String released;
+    @SerializedName("Runtime")
     private String runtime;
+    @SerializedName("Genre")
     private String genre;
+    @SerializedName("Director")
     private String director;
+    @SerializedName("Writer")
     private String writer;
+    @SerializedName("Actors")
     private String actors;
+    @SerializedName("Plot")
     private String plot;
+    @SerializedName("Language")
     private String language;
+
+    @SerializedName("Country")
     private String country;
+    @SerializedName("Awards")
     private String awards;
+    @SerializedName("Posters")
     private String poster;
+
+    @SerializedName("Ratings")
     private List<Rating> ratings;
+    @SerializedName("Metascore")
     private String metascore;
+
+    @SerializedName("imdbRating")
     private String imdbRating;
+    @SerializedName("imdbVotes")
     private String imdbVotes;
+    @SerializedName("imdbID")
     private String imdbID;
+    @SerializedName("Type")
     private String type;
+    @SerializedName("DVD")
     private String DVD;
+    @SerializedName("BoxOffice")
     private String boxOffice;
+    @SerializedName("Production")
     private String production;
+    @SerializedName("Website")
     private String website;
+    @SerializedName("Response")
     private String response;
+
 
     public String getTitle() {
         return title;
@@ -145,8 +177,8 @@ public class peliculas {
         return ratings;
     }
 
-    public void setRatings(List<Rating> ratings) {
-        this.ratings = ratings;
+    public void setRatings(List<Rating> Ratings) {
+        this.ratings = Ratings;
     }
 
     public String getMetascore() {

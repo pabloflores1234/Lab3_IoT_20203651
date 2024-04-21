@@ -1,8 +1,16 @@
 package com.example.lab3_20203651.objetos;
 
-public class Rating {
+import com.google.gson.annotations.SerializedName;
+
+import java.io.Serializable;
+
+public class Rating implements Serializable {
+
+    @SerializedName("Source")
     private String source;
+    @SerializedName("Value")
     private String value;
+
 
     public String getSource() {
         return source;
