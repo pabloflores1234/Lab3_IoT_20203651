@@ -36,7 +36,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topAppContador">
 
-        <!-- Texto para el número primo -->
+
 
         <TextView
             android:id="@+id/textViewSuPrimoEs"
@@ -81,9 +81,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
 
-        <!-- Botón "Descender" -->
 
-        <!-- Texto "Pausar/Reiniciar" -->
 
         <TextView
             android:id="@+id/textViewAscDesc"
@@ -98,7 +96,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <!-- Botón "Pausar" -->
+
 
         <Button
             android:id="@+id/buttonDescender"
