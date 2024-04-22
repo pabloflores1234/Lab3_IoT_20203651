@@ -5,6 +5,8 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -58,8 +60,39 @@ public class Contador extends AppCompatActivity {
 
         metodocontador();
 
+        Button buttonDescender = findViewById(R.id.buttonDescender);
+        final boolean[] ascendiendo = {false};
+
+        buttonDescender.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (ascendiendo[0]) {
+                    buttonDescender.setText("Descender");
+                    ascendiendo[0] = false;
+                } else {
+                    buttonDescender.setText("Ascender");
+                    ascendiendo[0] = true;
+                }
+            }
+        });
+        Button buttonPausar = findViewById(R.id.buttonPausar);
+        final boolean[] pausado = {false};
+
+        buttonPausar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (pausado[0]) {
+                    buttonPausar.setText("Pausar");
+                    pausado[0] = false;
+                } else {
+                    buttonPausar.setText("Reiniciar");
+                    pausado[0] = true;
+                }
+            }
+        });
 
     }
+
 
     public void metodocontador(){
 
