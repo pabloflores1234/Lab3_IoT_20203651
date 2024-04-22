@@ -80,7 +80,7 @@ public class Contador extends AppCompatActivity {
 
                     int[] arrayPrimos = new int[listaprimo.size()];
 
-                    // Llenar el arreglo con los números primos
+
                     for (int i = 0; i < listaprimo.size(); i++) {
                         arrayPrimos[i] = listaprimo.get(i).getNumber();
                     }
